@@ -20,79 +20,119 @@
 
     // ── DATA (updated by refresh.js on every run) ──────────────────
     const FX_DATA = {
-      "lastUpdated": "2 Jul 2026",
-      "pairs": [
-        {
-          "pair": "USD/EGP", "flag": "🇪🇬", "name": "Egyptian Pound",
-          "spotRate": 49.08, "change7d": "-1.2%", "trend7d": "depreciation",
-          "change30d": "-6.1%", "trend30d": "depreciation", "outlook6m": "stable",
-          "inflationRate": "14.6%", "inflationNote": "May 2026 YoY — Goldman forecasts peak ~17.5% in Aug",
-          "interestRate": "19.0%", "interestNote": "CBE on hold; next MPC 9 Jul — possible 200bps hike",
-          "realRate": "+4.4%",
-          "drivers": [
-            "EGP up 6%+ in 30 days on IMF compliance & FX reserve confidence",
-            "Inflation cooling but Goldman forecasts Aug reacceleration to ~17.5%",
-            "CBE holds at 19%; potential rate hike in Q3 to maintain real rate buffer"
-          ],
-          "outlookNote": "EGP to hold near 49–50 range; next MPC on 9 Jul is key near-term risk event."
-        },
-        {
-          "pair": "USD/KZT", "flag": "🇰🇿", "name": "Kazakhstani Tenge",
-          "spotRate": 487.97, "change7d": "+0.4%", "trend7d": "appreciation",
-          "change30d": "+1.8%", "trend30d": "appreciation", "outlook6m": "appreciation",
-          "inflationRate": "10.4%", "inflationNote": "May 2026 YoY — lowest since Mar 2025; NBK revised 2026 forecast to 9–11%",
-          "interestRate": "17.0%", "interestNote": "NBK cut 100bps in Jun 2026 (first cut since mid-2024)",
-          "realRate": "+6.6%",
-          "drivers": [
-            "WTI crude near $68 weighing on oil-linked tenge",
-            "NBK surprised with 100bps cut in Jun — signals gradual easing ahead",
-            "USD/KZT range-bound but biased weaker on oil & Fed stance"
-          ],
-          "outlookNote": "KZT faces continued mild pressure; oil prices and pace of NBK easing are key drivers."
-        },
-        {
-          "pair": "USD/UAH", "flag": "🇺🇦", "name": "Ukrainian Hryvnia",
-          "spotRate": 44.84, "change7d": "+0.2%", "trend7d": "appreciation",
-          "change30d": "+1.5%", "trend30d": "appreciation", "outlook6m": "appreciation",
-          "inflationRate": "8.2%", "inflationNote": "May 2026 YoY — above NBU trajectory; energy & wage pressures persist",
-          "interestRate": "15.0%", "interestNote": "NBU on hold since Apr 30; easing cycle paused until Q2 2027",
-          "realRate": "+6.8%",
-          "drivers": [
-            "UAH near 52-week high; war-driven USD demand persisting structurally",
-            "NBU easing cycle ended in Apr; rate on hold until Q2 2027 per guidance",
-            "EU €90bn unblocked in Apr provides key reserve buffer through 2026"
-          ],
-          "outlookNote": "UAH expected to weaken toward 45–46 by year-end under baseline scenario."
-        },
-        {
-          "pair": "USD/MAD", "flag": "🇲🇦", "name": "Moroccan Dirham",
-          "spotRate": 9.26, "change7d": "-1.7%", "trend7d": "depreciation",
-          "change30d": "+0.4%", "trend30d": "stable", "outlook6m": "depreciation",
-          "inflationRate": "1.5%", "inflationNote": "2026 avg forecast (BAM Jun 2026) — lowest in the monitored basket",
-          "interestRate": "2.25%", "interestNote": "BAM on hold since Mar 2025; expected to hold through end-2026",
-          "realRate": "+0.75%",
-          "drivers": [
-            "EUR/USD surge to 1.16 pulling USD/MAD lower via basket peg",
-            "BAM on hold at 2.25%; inflation contained at 1.5%",
-            "52-week range 8.94–9.75; tracking EUR lower currently"
-          ],
-          "outlookNote": "USD/MAD to drift lower in line with EUR strength; 6m target near 8.85–9.05."
-        },
-        {
-          "pair": "USD/EUR", "flag": "🇪🇺", "name": "Euro",
-          "spotRate": 0.862, "change7d": "-1.6%", "trend7d": "depreciation",
-          "change30d": "-0.5%", "trend30d": "depreciation", "outlook6m": "depreciation",
-          "inflationRate": "3.0%", "inflationNote": "2026 ECB baseline; May HICP at 3.2% — above 2% target",
-          "interestRate": "2.25%", "interestNote": "ECB hiked 25bps on 11 Jun 2026 (first hike since 2023)",
-          "realRate": "-0.75%",
-          "drivers": [
-            "ECB surprise hike on 11 Jun pushing EUR higher; USD broadly softer",
-            "EUR/USD at 1.16 — top of recent range; consensus 6m target 1.13–1.15",
-            "ECB inflation at 3.0% in 2026E; war-driven energy shock keeping rates elevated"
-          ],
-          "outlookNote": "USD expected to remain soft vs EUR over 6 months; EUR/USD targeting 1.13–1.16."
-        }
-      ]
+          "lastUpdated": "06 Jul 2026",
+          "pairs": [
+                {
+                      "pair": "USD/EGP",
+                      "flag": "🇪🇬",
+                      "name": "Egyptian Pound",
+                      "spotRate": 48.85,
+                      "change7d": "-0.9%",
+                      "trend7d": "depreciation",
+                      "change30d": "-5.2%",
+                      "trend30d": "depreciation",
+                      "outlook6m": "stable",
+                      "inflationRate": "14.6%",
+                      "inflationNote": "May 2026 YoY — easing from 14.9% in Apr; transport inflation fading but housing/utilities still surging 40%+",
+                      "interestRate": "19.0%",
+                      "interestNote": "CBE held at 19% (May 21 meeting) — second consecutive pause amid Iran-conflict upside inflation risks; prior 825bps of cuts Apr 2025–Feb 2026",
+                      "realRate": "+4.4%",
+                      "drivers": [
+                            "Iran conflict boosting energy/food import costs",
+                            "CBE eyeing possible Q3 rate hike of 200bps",
+                            "Strong remittances ($39.2bn FY2025/26) support EGP"
+                      ],
+                      "outlookNote": "EGP likely to remain range-bound near 49 as CBE balances disinflation against regional energy shock risks and a potential policy rate hike in Q3 2026."
+                },
+                {
+                      "pair": "USD/KZT",
+                      "flag": "🇰🇿",
+                      "name": "Kazakhstani Tenge",
+                      "spotRate": 472.67,
+                      "change7d": "-0.5%",
+                      "trend7d": "depreciation",
+                      "change30d": "-2.8%",
+                      "trend30d": "depreciation",
+                      "outlook6m": "stable",
+                      "inflationRate": "10.4%",
+                      "inflationNote": "May 2026 YoY — lowest since March 2025; food and non-food price growth both easing gradually",
+                      "interestRate": "17.0%",
+                      "interestNote": "NBK cut 100bps to 17% at June 5 meeting — first cut since mid-2024, surprising markets; revised 2026 inflation forecast down to 9–11%",
+                      "realRate": "+6.6%",
+                      "drivers": [
+                            "Tenge appreciating ~9% over past 12 months on oil revenues",
+                            "VAT hike to 16% and fuel price liberalisation add upside inflation risk",
+                            "Russia-Ukraine spillovers and Middle East oil price volatility"
+                      ],
+                      "outlookNote": "Tenge expected to remain broadly supported by oil export receipts and moderately restrictive monetary conditions, with further gradual NBK easing possible if inflation falls to single digits."
+                },
+                {
+                      "pair": "USD/UAH",
+                      "flag": "🇺🇦",
+                      "name": "Ukrainian Hryvnia",
+                      "spotRate": 44.53,
+                      "change7d": "+0.2%",
+                      "trend7d": "appreciation",
+                      "change30d": "+0.3%",
+                      "trend30d": "appreciation",
+                      "outlook6m": "depreciation",
+                      "inflationRate": "8.2%",
+                      "inflationNote": "May 2026 YoY — eased from 8.6% in Apr; energy/transport inflation elevated from Middle East oil shock and Russian grid strikes",
+                      "interestRate": "15.0%",
+                      "interestNote": "NBU held at 15% on June 19 — easing cycle effectively ended; rates projected on hold until Q2 2027 amid war-driven energy and FX risks",
+                      "realRate": "+6.8%",
+                      "drivers": [
+                            "Ongoing Russia-Ukraine war destroying energy infrastructure",
+                            "EUR 90bn EU funding package supporting hryvnia stability",
+                            "NBU FX interventions ($3.2bn in May) capping depreciation"
+                      ],
+                      "outlookNote": "Hryvnia faces persistent depreciation pressure from war-related energy costs and military spending, partially offset by record FX reserves ($45.7bn) and EU aid inflows."
+                },
+                {
+                      "pair": "USD/MAD",
+                      "flag": "🇲🇦",
+                      "name": "Moroccan Dirham",
+                      "spotRate": 9.36,
+                      "change7d": "-0.3%",
+                      "trend7d": "depreciation",
+                      "change30d": "+1.0%",
+                      "trend30d": "appreciation",
+                      "outlook6m": "stable",
+                      "inflationRate": "1.2%",
+                      "inflationNote": "May 2026 YoY — down from 1.7% in Apr; energy/fuel prices surging 27.6% YoY but broader CPI remains near-subdued",
+                      "interestRate": "2.25%",
+                      "interestNote": "Bank Al-Maghrib held at 2.25% on June 23 — fifth consecutive hold; inflation forecast at 1.5% for 2026, rate expected unchanged through year-end",
+                      "realRate": "+1.05%",
+                      "drivers": [
+                            "Strong 2026 agricultural output boosting GDP to ~5.2%",
+                            "Energy import costs surging 27.6% YoY from Middle East shock",
+                            "MAD semi-pegged to EUR/USD basket limiting volatility"
+                      ],
+                      "outlookNote": "MAD likely to remain stable against USD given the currency basket peg regime, low domestic inflation, and robust economic growth near 5%, barring a significant oil price re-escalation."
+                },
+                {
+                      "pair": "USD/EUR",
+                      "flag": "🇪🇺",
+                      "name": "Euro",
+                      "spotRate": 0.8745,
+                      "change7d": "-0.45%",
+                      "trend7d": "depreciation",
+                      "change30d": "+1.6%",
+                      "trend30d": "appreciation",
+                      "outlook6m": "stable",
+                      "inflationRate": "2.8%",
+                      "inflationNote": "June 2026 YoY — slowed from 3.2% in May; core eased to 2.4%; both missed expectations as energy shock fades on US-Iran ceasefire hopes",
+                      "interestRate": "2.25%",
+                      "interestNote": "ECB deposit rate hiked 25bps to 2.25% on June 11 — first hike since 2023; MRO rate at 2.40%; next decision July 23 with ~50% chance of another hike",
+                      "realRate": "-0.55%",
+                      "drivers": [
+                            "ECB hawkish pivot vs. Fed holding at 3.50–3.75% caps EUR upside",
+                            "Weak US payrolls (57k jobs) boosting EUR vs. dollar short-term",
+                            "Middle East energy shock fading as US-Iran peace talks progress"
+                      ],
+                      "outlookNote": "EUR/USD likely range-bound near 1.14 over 6 months as ECB tightening offsets Fed hawkishness, with modest EUR upside if energy prices continue to fall and Eurozone inflation eases toward target."
+                }
+          ]
     };
 
     // ── Components ─────────────────────────────────────────────────
