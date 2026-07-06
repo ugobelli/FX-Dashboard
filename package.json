@@ -1,0 +1,7 @@
+{
+  "name": "fx-dashboard",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0"
+  }
+}
