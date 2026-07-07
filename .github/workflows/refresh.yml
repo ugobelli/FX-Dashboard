@@ -4,7 +4,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # ← daily at 6am UTC (see point 3)
+    - cron: '0 6 * * *'   # ← daily at 6am UTC 
   workflow_dispatch:          # Also allows manual trigger from GitHub UI
 
 jobs:
